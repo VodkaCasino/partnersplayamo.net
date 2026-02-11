@@ -7,7 +7,6 @@
     <link rel="canonical" href="https://partnersplayamo.net/">
     <meta name="description" content="PartnersPlayamo — is a line of 17 unique platforms for gambling enthusiasts, where every player can take advantage of the best conditions and lucrative bonuses.">
     <meta name="keywords" content="PlayAmo, online casino, affiliate programs, 20Bet, Avalon, BetAmo, BetChan, Bizzo Casino, Bob Casino, CasinoChan, Cookie Casino, Dragonslots, Limewin, Mason Slots, National Casino, Spinia, Woo Casino, Spinando, Granawin, VODKA Casino, Partners Playamo, casino affiliate program">
-    <!-- Favicons -->
     <link rel="icon" type="image/webp" sizes="192x192" href="img/casino-app-icon-192.webp">
     <link rel="icon" type="image/webp" sizes="512x512" href="img/casino-app-icon-512.webp">
     <link rel="apple-touch-icon" sizes="192x192" href="img/casino-app-icon-192.webp">
@@ -50,11 +49,7 @@
             line-height: 130%;
             color: #fff;
             text-align: left;
-            background-color: #0a0808;
-            background-image: url(https://testing-websites.info/partnersplayamo.com/wp-content/themes/playamo/assets/css/../images/bg.svg);
-            background-position: right center;
-            background-size: cover;
-            background-repeat: repeat-y;
+            background-color: #101214;
             margin: 0;
             padding: 0;
             min-height: 100vh;
@@ -159,18 +154,33 @@
             width: 100%;
             height: 100%;
             background: 
-                radial-gradient(circle 600px at 10% 20%, rgba(102, 126, 234, 0.08) 0%, transparent 50%),
-                radial-gradient(circle 500px at 90% 80%, rgba(245, 87, 108, 0.08) 0%, transparent 50%),
-                radial-gradient(circle 400px at 50% 50%, rgba(79, 172, 254, 0.06) 0%, transparent 50%);
+                radial-gradient(circle 800px at 10% 20%, rgba(102, 126, 234, 0.15) 0%, transparent 60%),
+                radial-gradient(circle 700px at 90% 80%, rgba(245, 87, 108, 0.15) 0%, transparent 60%),
+                radial-gradient(circle 600px at 50% 50%, rgba(79, 172, 254, 0.12) 0%, transparent 60%),
+                radial-gradient(circle 500px at 30% 70%, rgba(190, 29, 49, 0.1) 0%, transparent 50%),
+                radial-gradient(circle 450px at 70% 30%, rgba(0, 161, 136, 0.1) 0%, transparent 50%);
             pointer-events: none;
             z-index: 0;
             animation: floatBackground 30s ease-in-out infinite;
         }
 
         @keyframes floatBackground {
-            0%, 100% { transform: translate(0, 0) scale(1); opacity: 1; }
-            33% { transform: translate(20px, -20px) scale(1.05); opacity: 0.9; }
-            66% { transform: translate(-20px, 20px) scale(0.95); opacity: 0.9; }
+            0%, 100% { 
+                transform: translate(0, 0) scale(1); 
+                opacity: 1; 
+            }
+            25% { 
+                transform: translate(30px, -30px) scale(1.08); 
+                opacity: 0.95; 
+            }
+            50% { 
+                transform: translate(-25px, 25px) scale(0.92); 
+                opacity: 0.9; 
+            }
+            75% { 
+                transform: translate(20px, 30px) scale(1.05); 
+                opacity: 0.95; 
+            }
         }
 
         .header {
@@ -179,8 +189,8 @@
             align-items: center;
             background: #101214;
             color: rgba(255, 255, 255, 1);
-            padding-top: 10px;
-            padding-bottom: 10px;
+            padding-top: 20px;
+            padding-bottom: 20px;
             margin: 0;
             position: sticky;
             top: 48px;
@@ -191,15 +201,16 @@
         .header-content {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 32px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            gap: 40px;
         }
 
         .logo h1 {
             font-family: "Roboto Condensed", serif;
-            font-size: 36px;
+            font-size: 38px;
             font-weight: 700;
             margin: 0;
             color: #fff;
@@ -225,7 +236,7 @@
         .logo p {
             font-size: 13px;
             color: var(--text-secondary);
-            margin: 8px 0 0 0;
+            margin: 12px 0 0 0;
             font-weight: 500;
             letter-spacing: 0.1em;
             text-transform: uppercase;
@@ -234,7 +245,8 @@
 
         .nav {
             display: flex;
-            gap: 32px;
+            align-items: center;
+            gap: 40px;
         }
 
         .nav-link {
@@ -257,14 +269,16 @@
         .section-container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 80px 20px;
+            padding: 60px 40px;
             width: 100%;
             box-sizing: border-box;
             overflow-x: hidden;
+            position: relative;
+            z-index: 1;
         }
 
         .partners .section-container {
-            padding-top: 40px;
+            padding-top: 30px;
         }
 
         .about h2,
@@ -274,9 +288,10 @@
             font-weight: 700;
             text-transform: uppercase;
             color: #fff;
-            text-align: left;
-            margin: 0 0 32px 0;
+            text-align: center;
+            margin: 0 auto 24px auto;
             line-height: 120%;
+            max-width: 100%;
         }
 
         .about p,
@@ -285,14 +300,14 @@
             font-size: 18px;
             color: var(--apple-secondary);
             text-align: center;
-            margin: 0 0 60px 0;
+            margin: 0 0 30px 0;
             max-width: 600px;
             margin-left: auto;
             margin-right: auto;
         }
 
         .partners {
-            background: linear-gradient(180deg, #f8fafc 0%, #ffffff 50%, #f8fafc 100%);
+            background: #101214;
             width: 100%;
             max-width: 100vw;
             overflow-x: hidden;
@@ -300,9 +315,7 @@
         }
 
         .hero {
-            background: #e5ddd5;
-            background-image: 
-                url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(0,0,0,0.02)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+            background: #101214;
             width: 100%;
             padding: 0;
             position: relative;
@@ -312,11 +325,14 @@
         .hero-content {
             max-width: 800px;
             margin: 0 auto;
-            padding: 24px;
-            background: rgba(16, 18, 20, 0.9);
+            padding: 32px;
+            background: rgba(16, 18, 20, 0.85);
             border-radius: 16px;
             min-height: 400px;
             position: relative;
+            z-index: 1;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
         }
 
         h1, h2, h3, h4, .title {
@@ -337,7 +353,7 @@
         }
 
         h2 {
-            margin-bottom: 32px;
+            margin-bottom: 24px;
             margin-top: 0;
             font-size: 36px;
             line-height: 120%;
@@ -355,7 +371,7 @@
             font-weight: 700;
             text-transform: uppercase;
             color: #fff;
-            margin: 0 0 32px 0;
+            margin: 0 0 24px 0;
             text-align: left;
         }
 
@@ -409,11 +425,14 @@
         .partners-intro {
             max-width: 800px;
             margin: 0 auto 20px auto;
-            padding: 24px;
-            background: rgba(16, 18, 20, 0.9);
+            padding: 32px;
+            background: rgba(16, 18, 20, 0.85);
             border-radius: 16px;
             min-height: 200px;
             position: relative;
+            z-index: 1;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
         }
 
 
@@ -423,7 +442,7 @@
             text-transform: uppercase;
             color: #be1d31;
             text-align: left;
-            margin: 0 0 32px 0;
+            margin: 0 0 24px 0;
             line-height: 120%;
         }
 
@@ -455,13 +474,13 @@
         .contact-info {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 32px;
+            gap: 64px;
             max-width: 800px;
             margin: 0 auto;
         }
 
         .contact-item {
-            background: rgba(16, 18, 20, 0.9);
+            background: rgba(16, 18, 20, 0.85);
             border-radius: 16px;
             padding: 40px 32px;
             text-align: center;
@@ -470,6 +489,8 @@
             position: relative;
             overflow: hidden;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            z-index: 1;
         }
 
         .contact-item::before {
@@ -540,7 +561,7 @@
         .footer-content {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 40px;
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
@@ -619,7 +640,6 @@
             fill: var(--apple-text);
         }
 
-        /* Общие: кнопки, виджет, якоря */
         .telegram-iframe {
             position: absolute;
             width: 96%;
@@ -628,6 +648,7 @@
             border-radius: 50%;
             border: none;
             z-index: 1;
+            pointer-events: none;
         }
 
         .tg {
@@ -702,18 +723,49 @@
             justify-content: center;
         }
 
-        .casino-logo img,
-        .casino-logo picture {
+        .carousel-track .casino-logo {
             width: 100%;
-            height: 100%;
-            object-fit: cover;
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .carousel-track .casino-logo img,
+        .carousel-track .casino-logo picture,
+        .carousel-track .casino-logo video {
+            width: 100%;
+            max-width: 260px;
+            height: auto;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .carousel-track .casino-logo picture img {
+            width: 100%;
+            max-width: 260px;
+            height: auto;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .casino-logo img,
+        .casino-logo picture,
+        .casino-logo video {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
             display: block;
         }
 
         .casino-logo picture img {
             width: 100%;
-            height: 100%;
-            object-fit: cover;
+            height: auto;
+            object-fit: contain;
             display: block;
         }
 
@@ -747,6 +799,7 @@
             height: 100%;
             top: 0;
             left: 0;
+            overflow: hidden;
         }
 
         .casino-overlay {
@@ -905,7 +958,6 @@
             object-fit: contain;
         }
 
-        /* Якоря/служебные данные в overlay — скрыто, без вывода текста */
         .overlay-hidden {
             position: absolute;
             left: -9999px;
@@ -915,23 +967,117 @@
             overflow: hidden;
         }
 
-        /* ========== Карусель ========== */
         .carousel-wrapper {
             position: relative;
             width: 100%;
             max-width: 100%;
             overflow: hidden;
         }
-
+        
         .carousel-track {
             display: flex;
             transition: transform 0.5s ease;
             will-change: transform;
             align-items: stretch;
+            position: relative;
+        }
+        
+        .carousel-track .telegram-button {
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .carousel-track .telegram-button > * {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .carousel-track .telegram-button * {
+            max-width: 100%;
         }
 
         .carousel-track .telegram-button {
-            flex-shrink: 0;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .carousel-track .telegram-button .telegram-widget {
+            position: absolute !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: 100% !important;
+            height: 100% !important;
+            z-index: 0 !important;
+            pointer-events: none !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+        
+        .carousel-track .telegram-button .telegram-widget figure {
+            position: absolute !important;
+            width: 100% !important;
+            height: 100% !important;
+            top: 0 !important;
+            left: 0 !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            z-index: 0 !important;
+        }
+        
+        .carousel-track .telegram-button .telegram-widget iframe {
+            position: absolute !important;
+            width: 100% !important;
+            height: 100% !important;
+            top: 0 !important;
+            left: 0 !important;
+            border-radius: 0 !important;
+            border: none !important;
+            z-index: 0 !important;
+            pointer-events: none !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+        
+        .carousel-track .telegram-button .tg {
+            position: absolute !important;
+            width: 56px !important;
+            height: 56px !important;
+            z-index: 0 !important;
+            pointer-events: none !important;
+        }
+        
+        .carousel-track .telegram-button a.tg {
+            position: absolute !important;
+            width: 56px !important;
+            height: 56px !important;
+            z-index: 0 !important;
+            pointer-events: none !important;
+        }
+        
+        .carousel-track .telegram-button a.tg div {
+            position: relative !important;
+            width: 100% !important;
+            height: 100% !important;
+            border-radius: 50% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+        
+        .carousel-track .telegram-button a.tg div img {
+            width: 100% !important;
+            height: 100% !important;
+            object-fit: contain !important;
+        }
+
+        .overlay-page .telegram-button .telegram-widget {
+            display: block !important;
         }
 
         .carousel-track.dragging {
@@ -1011,7 +1157,6 @@
         .carousel-btn.prev { left: 10px; }
         .carousel-btn.next { right: 10px; }
 
-        /* ========== ПК: от 768px ========== */
         @media (min-width: 768px) {
             .container {
                 padding: 0;
@@ -1021,7 +1166,14 @@
                 flex: 0 0 calc(100% / 3);
                 max-width: calc(100% / 3);
                 box-sizing: border-box;
-                padding: 0 10px;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                text-align: center;
+                overflow: hidden !important;
+                position: relative;
             }
 
             .telegram-button {
@@ -1035,12 +1187,16 @@
                 border: 1px solid rgba(255, 255, 255, 0.5);
                 display: flex;
                 flex-direction: column;
-                align-items: stretch;
+                align-items: center;
+                justify-content: flex-start;
                 gap: 0;
                 cursor: pointer;
                 transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
                 box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-                overflow: visible !important;
+            }
+            
+            .carousel-track .telegram-button {
+                overflow: hidden !important;
             }
 
             .telegram-button .telegram-widget {
@@ -1145,13 +1301,27 @@
                 opacity: 1 !important;
             }
 
-            /* Лого — горизонтальная картинка сверху карточки */
             .casino-logo {
                 order: -1;
                 width: 100%;
                 height: auto;
                 border-radius: 16px 16px 0 0;
                 border: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto;
+            }
+
+            .casino-logo img,
+            .casino-logo picture,
+            .casino-logo video {
+                width: 100%;
+                max-width: 280px;
+                height: auto;
+                object-fit: contain;
+                margin: 0 auto;
+                display: block;
             }
 
             .overlay-page .casino-logo {
@@ -1190,12 +1360,11 @@
             }
         }
 
-        /* ========== Мобильная: до 768px ========== */
         @media (max-width: 768px) {
             .header-content {
                 flex-direction: column;
-                gap: 20px;
-                padding: 16px;
+                gap: 28px;
+                padding: 24px 16px;
             }
 
             .logo {
@@ -1207,11 +1376,11 @@
             }
 
             .section-container {
-                padding: 60px 16px;
+                padding: 40px 20px;
             }
 
             .partners .section-container {
-                padding-top: 32px;
+                padding-top: 20px;
             }
 
             .about h2,
@@ -1226,34 +1395,34 @@
 
             .hero h2 {
                 font-size: 28px;
-                margin: 0 0 20px 0;
+                margin: 0 0 16px 0;
             }
 
             .hero-text {
                 font-size: 16px;
-                margin: 0 0 20px 0;
+                margin: 0 0 16px 0;
                 padding: 0 16px;
             }
 
             .partners-intro {
                 padding: 0 16px;
-                margin: 0 auto 30px auto;
+                margin: 0 auto 20px auto;
             }
 
             .partners-intro h2 {
                 font-size: 28px;
-                margin: 0 0 20px 0;
+                margin: 0 0 16px 0;
             }
 
             .partners-description {
                 font-size: 16px;
-                margin: 0 0 20px 0;
+                margin: 0 0 16px 0;
                 padding: 0 16px;
             }
 
             .contacts-intro {
                 font-size: 16px;
-                margin: 0 0 20px 0;
+                margin: 0 0 16px 0;
                 padding: 0 16px;
             }
 
@@ -1269,25 +1438,47 @@
             .carousel-track {
                 width: 100%;
             }
-
+            
             .carousel-track .telegram-button {
-                flex: 0 0 85%;
-                width: 85%;
-                max-width: 85%;
+                flex: 0 0 80%;
+                width: 80%;
+                max-width: 80%;
                 box-sizing: border-box;
                 padding: 0;
                 margin: 0;
+                overflow: hidden !important;
+                position: relative;
+            }
+            
+            .carousel-track .telegram-button * {
+                max-width: 100%;
             }
 
             .casino-logo {
                 max-height: 50vh;
             }
 
-            .casino-logo img,
-            .casino-logo picture,
-            .casino-logo picture img {
-                max-height: 50vh;
+            .carousel-track .casino-logo {
+                width: 100%;
+                margin: 0 auto;
+                height: auto;
+                max-height: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .carousel-track .casino-logo img,
+            .carousel-track .casino-logo picture,
+            .carousel-track .casino-logo picture img,
+            .carousel-track .casino-logo video {
+                width: 100%;
+                max-width: 200px;
+                height: auto;
+                max-height: none;
                 object-fit: contain;
+                margin: 0 auto;
+                display: block;
             }
 
             .telegram-button {
@@ -1305,7 +1496,10 @@
                 cursor: pointer;
                 transition: all 0.3s ease;
                 box-shadow: 0 2px 16px var(--apple-shadow);
-                overflow: visible !important;
+            }
+            
+            .carousel-track .telegram-button {
+                overflow: hidden !important;
             }
 
             .telegram-button .telegram-widget {
@@ -1372,7 +1566,6 @@
                 opacity: 1 !important;
             }
 
-            /* Вертикальная картинка 299x599 - ограничиваем размер */
             .casino-logo {
                 width: 100%;
                 max-width: 100vw;
@@ -1533,7 +1726,6 @@
         }
     </style>
     
-    <!-- Structured Data (Schema.org) for Rich Snippets -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -1766,6 +1958,7 @@
         "@type": "Product",
         "name": "Приветственный бонус для новых партнеров",
         "description": "Специальное предложение для вебмастеров: высокие комиссии, быстрые выплаты, персональный менеджер",
+        "image": "https://partnersplayamo.net/img/casino-app-icon-512.webp",
         "brand": {
             "@type": "Brand",
             "name": "Partners Playamo"
@@ -1776,7 +1969,29 @@
             "priceCurrency": "EUR",
             "availability": "https://schema.org/InStock",
             "validFrom": "2025-01-01",
-            "validThrough": "2026-12-31"
+            "validThrough": "2026-12-31",
+            "shippingDetails": {
+                "@type": "OfferShippingDetails",
+                "shippingRate": {
+                    "@type": "MonetaryAmount",
+                    "value": "0",
+                    "currency": "EUR"
+                },
+                "deliveryTime": {
+                    "@type": "ShippingDeliveryTime",
+                    "handlingTime": {
+                        "@type": "QuantitativeValue",
+                        "minValue": 0,
+                        "maxValue": 0,
+                        "unitCode": "DAY"
+                    }
+                }
+            },
+            "hasMerchantReturnPolicy": {
+                "@type": "MerchantReturnPolicy",
+                "applicableCountry": "EU",
+                "returnPolicyCategory": "https://schema.org/NoReturnsAccepted"
+            }
         },
         "aggregateRating": {
             "@type": "AggregateRating",
@@ -2085,11 +2300,9 @@
         <img src="https://playamopartners.com/wp-content/themes/playamopartners/assets/img/bg-item-3.png" alt="bg-item" title="bg-item" class="body-bg-item body-bg-4">
         <img src="https://playamopartners.com/wp-content/themes/playamopartners/assets/img/bg-item-3.png" alt="bg-item" title="bg-item" class="body-bg-item body-bg-5">
     </div>
-    <!-- Site Under Reconstruction Banner -->
     <div style="background: #ff9500; color: white; text-align: center; padding: 12px; font-weight: 600; font-size: 16px; position: sticky; top: 0; z-index: 2000; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
         Site under reconstruction
     </div>
-    <!-- Header -->
     <header class="header">
         <div class="header-content">
             <div class="logo">
@@ -2104,7 +2317,6 @@
         </div>
     </header>
     
-    <!-- Hero Section -->
     <section class="hero">
         <div class="section-container">
             <div class="hero-content">
@@ -2115,14 +2327,8 @@
         </div>
     </section>
 
-    <!-- Partners Section -->
-    <section id="partners" class="partners">
+    <section class="partners">
         <div class="section-container">
-            <div class="partners-intro">
-                <h2>Топ-18 партнерских программ казино с лучшими условиями</h2>
-                <p class="partners-description">В нашей подборке представлены только проверенные временем партнерские программы с отличной репутацией на рынке. Каждое казино прошло строгий отбор по критериям надежности выплат, размера комиссий и качества поддержки партнеров. Мы сотрудничаем исключительно с лицензированными операторами, которые работают в соответствии с европейскими стандартами безопасности и защиты данных игроков. Все программы поддерживают различные способы вывода средств, включая банковские переводы, электронные кошельки и криптовалюты. Наша платформа обеспечивает удобный доступ ко всем партнерским кабинетам через единый интерфейс Telegram Mini App.</p>
-                <p class="partners-description">Регистрация в любой из представленных партнерских программ открывает доступ к эксклюзивным инструментам для вебмастеров. Вы получите уникальные промокоды, специальные бонусные предложения для ваших рефералов и детальную статистику по конверсиям. Наша система автоматически отслеживает все регистрации и депозиты, совершенные по вашим реферальным ссылкам, обеспечивая максимальную прозрачность отчетности. Мы регулярно обновляем условия партнерских программ и добавляем новые казино в нашу сеть, чтобы предоставить вам лучшие возможности для заработка. Присоединяйтесь к тысячам успешных вебмастеров, которые уже зарабатывают с нашими партнерскими программами.</p>
-            </div>
             <div class="container">
             <div class="carousel-wrapper">
                 <button class="carousel-btn prev" onclick="carouselPrev()" aria-label="Previous">&#8249;</button>
@@ -2131,7 +2337,7 @@
         <div class="telegram-button" id="casino-1">
             <div class="button-number">1</div>
             <div class="casino-logo">
-                <img src="img/20bet.svg" alt="20Bet">
+                <img src="img/20bet.webp" alt="20Bet" loading="lazy">
             </div>
             <div class="button-content">
                 <h3>PLAY TELEGRAM</h3>
@@ -2145,7 +2351,7 @@
                 </figure>
                 <a href="tg://resolve?domain=partnersplayamo_bot" alt="Telegram MINI-APP REGISTRATION 20Bet" class="tg" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 2; text-decoration: none;">
                     <div style="position: relative; width: 100%; height: 100%; left: 1px; border-radius: 45%; cursor: pointer; transition: border-color 0.3s ease, transform 0.2s ease; background-image: linear-gradient(to bottom, #192232, #192232), linear-gradient(to bottom, var(--topLine) 20%, #192232 47%); overflow: hidden;">
-                        <img src="img/telegram-icon.svg" alt="Telegram 20Bet" loading="lazy" style="position: absolute; top: 50%; left: 47%; width: 60%; height: 60%; transform: translate(-50%, -50%); pointer-events: none;">
+                        <img src="img/TME.webp" alt="Telegram 20Bet" loading="lazy" class="tg-icon-img">
                     </div>
                 </a>
             </div>
@@ -2154,7 +2360,7 @@
         <div class="telegram-button" id="casino-2">
             <div class="button-number">2</div>
             <div class="casino-logo">
-                <img src="img/avalon.svg" alt="Avalon">
+                <img src="img/avalon.webp" alt="Avalon" loading="lazy">
             </div>
             <div class="button-content">
                 <h3>PLAY TELEGRAM</h3>
@@ -2168,7 +2374,7 @@
                 </figure>
                 <a href="tg://resolve?domain=partnersplayamo_bot" alt="Telegram MINI-APP REGISTRATION Avalon" class="tg" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 2; text-decoration: none;">
                     <div style="position: relative; width: 100%; height: 100%; left: 1px; border-radius: 45%; cursor: pointer; transition: border-color 0.3s ease, transform 0.2s ease; background-image: linear-gradient(to bottom, #192232, #192232), linear-gradient(to bottom, var(--topLine) 20%, #192232 47%); overflow: hidden;">
-                        <img src="img/telegram-icon.svg" alt="Telegram Avalon" loading="lazy" style="position: absolute; top: 50%; left: 47%; width: 60%; height: 60%; transform: translate(-50%, -50%); pointer-events: none;">
+                        <img src="img/TME.webp" alt="Telegram Avalon" loading="lazy" class="tg-icon-img">
                     </div>
                 </a>
             </div>
@@ -2177,7 +2383,7 @@
         <div class="telegram-button" id="casino-3">
             <div class="button-number">3</div>
             <div class="casino-logo">
-                <img src="img/betamo.svg" alt="BetAmo">
+                <img src="img/betamo.webp" alt="BetAmo" loading="lazy">
             </div>
             <div class="button-content">
                 <h3>PLAY TELEGRAM</h3>
@@ -2191,7 +2397,7 @@
                 </figure>
                 <a href="tg://resolve?domain=partnersplayamo_bot" alt="Telegram MINI-APP REGISTRATION BetAmo" class="tg" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 2; text-decoration: none;">
                     <div style="position: relative; width: 100%; height: 100%; left: 1px; border-radius: 45%; cursor: pointer; transition: border-color 0.3s ease, transform 0.2s ease; background-image: linear-gradient(to bottom, #192232, #192232), linear-gradient(to bottom, var(--topLine) 20%, #192232 47%); overflow: hidden;">
-                        <img src="img/telegram-icon.svg" alt="Telegram BetAmo" loading="lazy" style="position: absolute; top: 50%; left: 47%; width: 60%; height: 60%; transform: translate(-50%, -50%); pointer-events: none;">
+                        <img src="img/TME.webp" alt="Telegram BetAmo" loading="lazy" class="tg-icon-img">
                     </div>
                 </a>
             </div>
@@ -2200,7 +2406,7 @@
         <div class="telegram-button" id="casino-4">
             <div class="button-number">4</div>
             <div class="casino-logo">
-                <img src="img/betchan.svg" alt="BetChan">
+                <img src="img/betchan.webp" alt="BetChan" loading="lazy">
             </div>
             <div class="button-content">
                 <h3>PLAY TELEGRAM</h3>
@@ -2214,7 +2420,7 @@
                 </figure>
                 <a href="tg://resolve?domain=partnersplayamo_bot" alt="Telegram MINI-APP REGISTRATION BetChan" class="tg" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 2; text-decoration: none;">
                     <div style="position: relative; width: 100%; height: 100%; left: 1px; border-radius: 45%; cursor: pointer; transition: border-color 0.3s ease, transform 0.2s ease; background-image: linear-gradient(to bottom, #192232, #192232), linear-gradient(to bottom, var(--topLine) 20%, #192232 47%); overflow: hidden;">
-                        <img src="img/telegram-icon.svg" alt="Telegram BetChan" loading="lazy" style="position: absolute; top: 50%; left: 47%; width: 60%; height: 60%; transform: translate(-50%, -50%); pointer-events: none;">
+                        <img src="img/TME.webp" alt="Telegram BetChan" loading="lazy" class="tg-icon-img">
                     </div>
                 </a>
             </div>
@@ -2223,7 +2429,7 @@
         <div class="telegram-button" id="casino-5">
             <div class="button-number">5</div>
             <div class="casino-logo">
-                <img src="img/bizzo-casino.svg" alt="Bizzo Casino">
+                <img src="img/bizzo.webp" alt="Bizzo Casino" loading="lazy">
             </div>
             <div class="button-content">
                 <h3>PLAY TELEGRAM</h3>
@@ -2237,7 +2443,7 @@
                 </figure>
                 <a href="tg://resolve?domain=partnersplayamo_bot" alt="Telegram MINI-APP REGISTRATION Bizzo Casino" class="tg" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 2; text-decoration: none;">
                     <div style="position: relative; width: 100%; height: 100%; left: 1px; border-radius: 45%; cursor: pointer; transition: border-color 0.3s ease, transform 0.2s ease; background-image: linear-gradient(to bottom, #192232, #192232), linear-gradient(to bottom, var(--topLine) 20%, #192232 47%); overflow: hidden;">
-                        <img src="img/telegram-icon.svg" alt="Telegram Bizzo Casino" loading="lazy" style="position: absolute; top: 50%; left: 47%; width: 60%; height: 60%; transform: translate(-50%, -50%); pointer-events: none;">
+                        <img src="img/TME.webp" alt="Telegram Bizzo Casino" loading="lazy" class="tg-icon-img">
                     </div>
                 </a>
             </div>
@@ -2246,11 +2452,7 @@
         <a href="#view-bob-casino" class="telegram-button" id="casino-6" style="text-decoration: none; color: inherit; display: block;">
             <div class="button-number">6</div>
             <div class="casino-logo">
-                <picture>
-                    <source media="(min-width: 768px)" srcset="img/bob-land.webp" type="image/webp" width="599" height="299">
-                    <source media="(max-width: 767px)" srcset="img/bob.webp" type="image/webp" width="299" height="599">
-                    <img src="img/bob.webp" alt="Bob Casino online casino affiliate program" title="Bob Casino" width="299" height="599" loading="lazy">
-                </picture>
+                <img src="img/bob.webp" alt="Bob Casino online casino affiliate program" title="Bob Casino" loading="lazy">
             </div>
             <div class="button-content">
                 <h3>Bob Casino</h3>
@@ -2264,7 +2466,7 @@
                 </figure>
                 <a href="tg://resolve?domain=partnersplayamo_bot" alt="Telegram MINI-APP REGISTRATION Bob Casino" class="tg" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 2; text-decoration: none;">
                     <div style="position: relative; width: 100%; height: 100%; left: 1px; border-radius: 45%; cursor: pointer; transition: border-color 0.3s ease, transform 0.2s ease; background-image: linear-gradient(to bottom, #192232, #192232), linear-gradient(to bottom, var(--topLine) 20%, #192232 47%); overflow: hidden;">
-                        <img src="img/telegram-icon.svg" alt="Telegram Bob Casino" loading="lazy" style="position: absolute; top: 50%; left: 47%; width: 60%; height: 60%; transform: translate(-50%, -50%); pointer-events: none;">
+                        <img src="img/TME.webp" alt="Telegram Bob Casino" loading="lazy" class="tg-icon-img">
                     </div>
                 </a>
             </div>
@@ -2273,11 +2475,7 @@
         <a href="#view-casinochan" class="telegram-button" id="casino-7" style="text-decoration: none; color: inherit; display: block;">
             <div class="button-number">7</div>
             <div class="casino-logo">
-                <picture>
-                    <source media="(min-width: 768px)" srcset="img/casinochan-land.webp" type="image/webp" width="599" height="299">
-                    <source media="(max-width: 767px)" srcset="img/casinochan.webp" type="image/webp" width="299" height="599">
-                    <img src="img/casinochan.webp" alt="CasinoChan online casino affiliate program" title="CasinoChan Casino" width="299" height="599" loading="lazy">
-                </picture>
+                <img src="img/casinochan.webp" alt="CasinoChan online casino affiliate program" title="CasinoChan Casino" loading="lazy">
             </div>
             <div class="button-content">
                 <h3>CasinoChan</h3>
@@ -2291,7 +2489,7 @@
                 </figure>
                 <a href="tg://resolve?domain=partnersplayamo_bot" alt="Telegram MINI-APP REGISTRATION CasinoChan" class="tg" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 2; text-decoration: none;">
                     <div style="position: relative; width: 100%; height: 100%; left: 1px; border-radius: 45%; cursor: pointer; transition: border-color 0.3s ease, transform 0.2s ease; background-image: linear-gradient(to bottom, #192232, #192232), linear-gradient(to bottom, var(--topLine) 20%, #192232 47%); overflow: hidden;">
-                        <img src="img/telegram-icon.svg" alt="Telegram CasinoChan" loading="lazy" style="position: absolute; top: 50%; left: 47%; width: 60%; height: 60%; transform: translate(-50%, -50%); pointer-events: none;">
+                        <img src="img/TME.webp" alt="Telegram CasinoChan" loading="lazy" class="tg-icon-img">
                     </div>
                 </a>
             </div>
@@ -2300,11 +2498,7 @@
         <a href="#view-cookie-casino" class="telegram-button" id="casino-8" style="text-decoration: none; color: inherit; display: block;">
             <div class="button-number">8</div>
             <div class="casino-logo">
-                <picture>
-                    <source media="(min-width: 768px)" srcset="img/cookie-land.webp" type="image/webp" width="599" height="299">
-                    <source media="(max-width: 767px)" srcset="img/cookie.webp" type="image/webp" width="299" height="599">
-                    <img src="img/cookie.webp" alt="Cookie Casino online casino affiliate program" title="Cookie Casino" width="299" height="599" loading="lazy">
-                </picture>
+                <img src="img/cookie.webp" alt="Cookie Casino online casino affiliate program" title="Cookie Casino" loading="lazy">
             </div>
             <div class="button-content">
                 <h3>Cookie Casino</h3>
@@ -2318,7 +2512,7 @@
                 </figure>
                 <a href="tg://resolve?domain=partnersplayamo_bot" alt="Telegram MINI-APP REGISTRATION Cookie Casino" class="tg" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 2; text-decoration: none;">
                     <div style="position: relative; width: 100%; height: 100%; left: 1px; border-radius: 45%; cursor: pointer; transition: border-color 0.3s ease, transform 0.2s ease; background-image: linear-gradient(to bottom, #192232, #192232), linear-gradient(to bottom, var(--topLine) 20%, #192232 47%); overflow: hidden;">
-                        <img src="img/telegram-icon.svg" alt="Telegram Cookie Casino" loading="lazy" style="position: absolute; top: 50%; left: 47%; width: 60%; height: 60%; transform: translate(-50%, -50%); pointer-events: none;">
+                        <img src="img/TME.webp" alt="Telegram Cookie Casino" loading="lazy" class="tg-icon-img">
                     </div>
                 </a>
             </div>
@@ -2327,11 +2521,7 @@
         <a href="#view-limewin-casino" class="telegram-button" id="casino-9" style="text-decoration: none; color: inherit; display: block;">
             <div class="button-number">9</div>
             <div class="casino-logo">
-                <picture>
-                    <source media="(min-width: 768px)" srcset="img/limewin-land.webp" type="image/webp" width="599" height="299">
-                    <source media="(max-width: 767px)" srcset="img/limewin.webp" type="image/webp" width="299" height="599">
-                    <img src="img/limewin.webp" alt="Limewin online casino affiliate program" title="Limewin Casino" width="299" height="599" loading="lazy">
-                </picture>
+                <img src="img/limewin.webp" alt="Limewin online casino affiliate program" title="Limewin Casino" loading="lazy">
             </div>
             <div class="button-content">
                 <h3>Limewin Casino</h3>
@@ -2345,7 +2535,7 @@
                 </figure>
                 <a href="tg://resolve?domain=partnersplayamo_bot" alt="Telegram MINI-APP REGISTRATION Limewin" class="tg" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 2; text-decoration: none;">
                     <div style="position: relative; width: 100%; height: 100%; left: 1px; border-radius: 45%; cursor: pointer; transition: border-color 0.3s ease, transform 0.2s ease; background-image: linear-gradient(to bottom, #192232, #192232), linear-gradient(to bottom, var(--topLine) 20%, #192232 47%); overflow: hidden;">
-                        <img src="img/telegram-icon.svg" alt="Telegram Limewin" loading="lazy" style="position: absolute; top: 50%; left: 47%; width: 60%; height: 60%; transform: translate(-50%, -50%); pointer-events: none;">
+                        <img src="img/TME.webp" alt="Telegram Limewin" loading="lazy" class="tg-icon-img">
                     </div>
                 </a>
             </div>
@@ -2354,11 +2544,7 @@
         <a href="#view-mason-slots-casino" class="telegram-button" id="casino-10" style="text-decoration: none; color: inherit; display: block;">
             <div class="button-number">10</div>
             <div class="casino-logo">
-                <picture>
-                    <source media="(min-width: 768px)" srcset="img/masonslots-land.webp" type="image/webp" width="599" height="299">
-                    <source media="(max-width: 767px)" srcset="img/masonslots.webp" type="image/webp" width="299" height="599">
-                    <img src="img/masonslots.webp" alt="Mason Slots online casino affiliate program" title="Mason Slots Casino" width="299" height="599" loading="lazy">
-                </picture>
+                <img src="img/masonslots.webp" alt="Mason Slots online casino affiliate program" title="Mason Slots Casino" loading="lazy">
             </div>
             <div class="button-content">
                 <h3>Mason Slots Casino</h3>
@@ -2372,7 +2558,7 @@
                 </figure>
                 <a href="tg://resolve?domain=partnersplayamo_bot" alt="Telegram MINI-APP REGISTRATION Mason Slots" class="tg" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 2; text-decoration: none;">
                     <div style="position: relative; width: 100%; height: 100%; left: 1px; border-radius: 45%; cursor: pointer; transition: border-color 0.3s ease, transform 0.2s ease; background-image: linear-gradient(to bottom, #192232, #192232), linear-gradient(to bottom, var(--topLine) 20%, #192232 47%); overflow: hidden;">
-                        <img src="img/telegram-icon.svg" alt="Telegram Mason Slots" loading="lazy" style="position: absolute; top: 50%; left: 47%; width: 60%; height: 60%; transform: translate(-50%, -50%); pointer-events: none;">
+                        <img src="img/TME.webp" alt="Telegram Mason Slots" loading="lazy" class="tg-icon-img">
                     </div>
                 </a>
             </div>
@@ -2381,11 +2567,7 @@
         <a href="#view-national-casino" class="telegram-button" id="casino-11" style="text-decoration: none; color: inherit; display: block;">
             <div class="button-number">11</div>
             <div class="casino-logo">
-                <picture>
-                    <source media="(min-width: 768px)" srcset="img/national-land.webp" type="image/webp" width="599" height="299">
-                    <source media="(max-width: 767px)" srcset="img/national.webp" type="image/webp" width="299" height="599">
-                    <img src="img/national.webp" alt="National Casino online casino affiliate program" title="National Casino" width="299" height="599" loading="lazy">
-                </picture>
+                <img src="img/national.webp" alt="National Casino online casino affiliate program" title="National Casino" loading="lazy">
             </div>
             <div class="button-content">
                 <h3>National Casino</h3>
@@ -2399,7 +2581,7 @@
                 </figure>
                 <a href="tg://resolve?domain=partnersplayamo_bot" alt="Telegram MINI-APP REGISTRATION National Casino" class="tg" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 2; text-decoration: none;">
                     <div style="position: relative; width: 100%; height: 100%; left: 1px; border-radius: 45%; cursor: pointer; transition: border-color 0.3s ease, transform 0.2s ease; background-image: linear-gradient(to bottom, #192232, #192232), linear-gradient(to bottom, var(--topLine) 20%, #192232 47%); overflow: hidden;">
-                        <img src="img/telegram-icon.svg" alt="Telegram National Casino" loading="lazy" style="position: absolute; top: 50%; left: 47%; width: 60%; height: 60%; transform: translate(-50%, -50%); pointer-events: none;">
+                        <img src="img/TME.webp" alt="Telegram National Casino" loading="lazy" class="tg-icon-img">
                     </div>
                 </a>
             </div>
@@ -2408,11 +2590,7 @@
         <a href="#view-playamo-casino" class="telegram-button" id="casino-12" style="text-decoration: none; color: inherit; display: block;">
             <div class="button-number">12</div>
             <div class="casino-logo">
-                <picture>
-                    <source media="(min-width: 768px)" srcset="img/playamo-land.webp" type="image/webp" width="599" height="299">
-                    <source media="(max-width: 767px)" srcset="img/playamo.webp" type="image/webp" width="299" height="599">
-                    <img src="img/playamo.webp" alt="PlayAmo online casino affiliate program" title="PlayAmo Casino" width="299" height="599" loading="lazy">
-                </picture>
+                <img src="img/playamo.webp" alt="PlayAmo online casino affiliate program" title="PlayAmo Casino" loading="lazy">
             </div>
             <div class="button-content">
                 <h3>PlayAmo Casino</h3>
@@ -2426,7 +2604,7 @@
                 </figure>
                 <a href="tg://resolve?domain=partnersplayamo_bot" alt="Telegram MINI-APP REGISTRATION PlayAmo" class="tg" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 2; text-decoration: none;">
                     <div style="position: relative; width: 100%; height: 100%; left: 1px; border-radius: 45%; cursor: pointer; transition: border-color 0.3s ease, transform 0.2s ease; background-image: linear-gradient(to bottom, #192232, #192232), linear-gradient(to bottom, var(--topLine) 20%, #192232 47%); overflow: hidden;">
-                        <img src="img/telegram-icon.svg" alt="Telegram PlayAmo" loading="lazy" style="position: absolute; top: 50%; left: 47%; width: 60%; height: 60%; transform: translate(-50%, -50%); pointer-events: none;">
+                        <img src="img/TME.webp" alt="Telegram PlayAmo" loading="lazy" class="tg-icon-img">
                     </div>
                 </a>
             </div>
@@ -2435,11 +2613,7 @@
         <a href="#view-spinia-casino" class="telegram-button" id="casino-13" style="text-decoration: none; color: inherit; display: block;">
             <div class="button-number">13</div>
             <div class="casino-logo">
-                <picture>
-                    <source media="(min-width: 768px)" srcset="img/spinia-land.webp" type="image/webp" width="599" height="299">
-                    <source media="(max-width: 767px)" srcset="img/spinia.webp" type="image/webp" width="299" height="599">
-                    <img src="img/spinia.webp" alt="Spinia online casino affiliate program" title="Spinia Casino" width="299" height="599" loading="lazy">
-                </picture>
+                <img src="img/spinia.webp" alt="Spinia online casino affiliate program" title="Spinia Casino" loading="lazy">
             </div>
             <div class="button-content">
                 <h3>Spinia Casino</h3>
@@ -2453,7 +2627,7 @@
                 </figure>
                 <a href="tg://resolve?domain=partnersplayamo_bot" alt="Telegram MINI-APP REGISTRATION Spinia" class="tg" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 2; text-decoration: none;">
                     <div style="position: relative; width: 100%; height: 100%; left: 1px; border-radius: 45%; cursor: pointer; transition: border-color 0.3s ease, transform 0.2s ease; background-image: linear-gradient(to bottom, #192232, #192232), linear-gradient(to bottom, var(--topLine) 20%, #192232 47%); overflow: hidden;">
-                        <img src="img/telegram-icon.svg" alt="Telegram Spinia" loading="lazy" style="position: absolute; top: 50%; left: 47%; width: 60%; height: 60%; transform: translate(-50%, -50%); pointer-events: none;">
+                        <img src="img/TME.webp" alt="Telegram Spinia" loading="lazy" class="tg-icon-img">
                     </div>
                 </a>
             </div>
@@ -2462,11 +2636,7 @@
         <a href="#view-woo-casino" class="telegram-button" id="casino-14" style="text-decoration: none; color: inherit; display: block;">
             <div class="button-number">14</div>
             <div class="casino-logo">
-                <picture>
-                    <source media="(min-width: 768px)" srcset="img/woo-land.webp" type="image/webp" width="599" height="299">
-                    <source media="(max-width: 767px)" srcset="img/woo.webp" type="image/webp" width="299" height="599">
-                    <img src="img/woo.webp" alt="Woo Casino online casino affiliate program" title="Woo Casino" width="299" height="599" loading="lazy">
-                </picture>
+                <img src="img/woo.webp" alt="Woo Casino online casino affiliate program" title="Woo Casino" loading="lazy">
             </div>
             <div class="button-content">
                 <h3>Woo Casino</h3>
@@ -2480,7 +2650,7 @@
                 </figure>
                 <a href="tg://resolve?domain=partnersplayamo_bot" alt="Telegram MINI-APP REGISTRATION Woo Casino" class="tg" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 2; text-decoration: none;">
                     <div style="position: relative; width: 100%; height: 100%; left: 1px; border-radius: 45%; cursor: pointer; transition: border-color 0.3s ease, transform 0.2s ease; background-image: linear-gradient(to bottom, #192232, #192232), linear-gradient(to bottom, var(--topLine) 20%, #192232 47%); overflow: hidden;">
-                        <img src="img/telegram-icon.svg" alt="Telegram Woo Casino" loading="lazy" style="position: absolute; top: 50%; left: 47%; width: 60%; height: 60%; transform: translate(-50%, -50%); pointer-events: none;">
+                        <img src="img/TME.webp" alt="Telegram Woo Casino" loading="lazy" class="tg-icon-img">
                     </div>
                 </a>
             </div>
@@ -2489,11 +2659,9 @@
         <a href="#view-spinando-casino" class="telegram-button" id="casino-15" style="text-decoration: none; color: inherit; display: block;">
             <div class="button-number">15</div>
             <div class="casino-logo">
-                <picture>
-                    <source media="(min-width: 768px)" srcset="img/spinando-casino-land.gif" type="image/gif" width="1154" height="529">
-                    <source media="(max-width: 767px)" srcset="img/casino-spinando.gif" type="image/gif" width="448" height="898">
-                    <img src="img/casino-spinando.gif" alt="Spinando online casino affiliate program" title="Spinando Casino" width="448" height="898" loading="lazy">
-                </picture>
+                <video autoplay loop muted playsinline style="width: 100%; height: auto; display: block;">
+                    <source src="img/spinando-casino.mp4" type="video/mp4">
+                </video>
             </div>
             <div class="button-content">
                 <h3>Spinando Casino</h3>
@@ -2507,7 +2675,7 @@
                 </figure>
                 <a href="tg://resolve?domain=partnersplayamo_bot" alt="Telegram MINI-APP REGISTRATION Spinando" class="tg" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 2; text-decoration: none;">
                     <div style="position: relative; width: 100%; height: 100%; left: 1px; border-radius: 45%; cursor: pointer; transition: border-color 0.3s ease, transform 0.2s ease; background-image: linear-gradient(to bottom, #192232, #192232), linear-gradient(to bottom, var(--topLine) 20%, #192232 47%); overflow: hidden;">
-                        <img src="img/telegram-icon.svg" alt="Telegram Spinando" loading="lazy" style="position: absolute; top: 50%; left: 47%; width: 60%; height: 60%; transform: translate(-50%, -50%); pointer-events: none;">
+                        <img src="img/TME.webp" alt="Telegram Spinando" loading="lazy" class="tg-icon-img">
                     </div>
                 </a>
             </div>
@@ -2516,11 +2684,7 @@
         <a href="#view-granawin-casino" class="telegram-button" id="casino-16" style="text-decoration: none; color: inherit; display: block;">
             <div class="button-number">16</div>
             <div class="casino-logo">
-                <picture>
-                    <source media="(min-width: 768px)" srcset="img/granawin_land.jpg" type="image/jpeg" width="902" height="414">
-                    <source media="(max-width: 767px)" srcset="img/granawin.jpg" type="image/jpeg" width="408" height="892">
-                    <img src="img/granawin.jpg" alt="Granawin online casino affiliate program" title="Granawin Casino" width="408" height="892" loading="lazy">
-                </picture>
+                <img src="img/granawin.webp" alt="Granawin online casino affiliate program" title="Granawin Casino" loading="lazy">
             </div>
             <div class="button-content">
                 <h3>Granawin Casino</h3>
@@ -2534,7 +2698,7 @@
                 </figure>
                 <a href="tg://resolve?domain=partnersplayamo_bot" alt="Telegram MINI-APP REGISTRATION Granawin" class="tg" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 2; text-decoration: none;">
                     <div style="position: relative; width: 100%; height: 100%; left: 1px; border-radius: 45%; cursor: pointer; transition: border-color 0.3s ease, transform 0.2s ease; background-image: linear-gradient(to bottom, #192232, #192232), linear-gradient(to bottom, var(--topLine) 20%, #192232 47%); overflow: hidden;">
-                        <img src="img/telegram-icon.svg" alt="Telegram Granawin" loading="lazy" style="position: absolute; top: 50%; left: 47%; width: 60%; height: 60%; transform: translate(-50%, -50%); pointer-events: none;">
+                        <img src="img/TME.webp" alt="Telegram Granawin" loading="lazy" class="tg-icon-img">
                     </div>
                 </a>
             </div>
@@ -2543,11 +2707,7 @@
         <a href="#view-vodka-casino" class="telegram-button" id="casino-17" style="text-decoration: none; color: inherit; display: block;">
             <div class="button-number">17</div>
             <div class="casino-logo">
-                <picture>
-                    <source media="(min-width: 768px)" srcset="img/vodkabetlang.webp" type="image/webp" width="599" height="299">
-                    <source media="(max-width: 767px)" srcset="img/vodkabet.webp" type="image/webp" width="299" height="599">
-                    <img src="img/vodkabet.webp" alt="VODKA Casino online casino affiliate program" title="VODKA Casino" width="299" height="599" loading="lazy">
-                </picture>
+                <img src="img/vodkabet.webp" alt="VODKA Casino online casino affiliate program" title="VODKA Casino" loading="lazy">
             </div>
             <div class="button-content">
                 <h3>VODKA Casino</h3>
@@ -2561,7 +2721,7 @@
                 </figure>
                 <a href="tg://resolve?domain=partnersplayamo_bot" alt="Telegram MINI-APP REGISTRATION VODKA CASINO $ VODKABET" class="tg" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 2; text-decoration: none;">
                     <div style="position: relative; width: 100%; height: 100%; left: 1px; border-radius: 45%; cursor: pointer; transition: border-color 0.3s ease, transform 0.2s ease; background-image: linear-gradient(to bottom, #192232, #192232), linear-gradient(to bottom, var(--topLine) 20%, #192232 47%); overflow: hidden;">
-                        <img src="VODKA CASINO &amp; VODKABET Telegram.svg" alt="Telegram VODKA CASINO $ VODKABET" loading="lazy" style="position: absolute; top: 50%; left: 47%; width: 60%; height: 60%; transform: translate(-50%, -50%); pointer-events: none;">
+                        <img src="img/TME.webp" alt="Telegram VODKA CASINO $ VODKABET" loading="lazy" class="tg-icon-img">
                     </div>
                 </a>
             </div>
@@ -2570,11 +2730,7 @@
         <a href="#view-dragonslots-casino" class="telegram-button" id="casino-18" style="text-decoration: none; color: inherit; display: block;">
             <div class="button-number">18</div>
             <div class="casino-logo">
-                <picture>
-                    <source media="(min-width: 768px)" srcset="img/dragonslots-land.webp" type="image/webp" width="599" height="299">
-                    <source media="(max-width: 767px)" srcset="img/dragonslots.webp" type="image/webp" width="299" height="599">
-                    <img src="img/dragonslots.webp" alt="Dragonslots online casino affiliate program" title="Dragonslots Casino" width="299" height="599" loading="lazy">
-                </picture>
+                <img src="img/dragonslots.webp" alt="Dragonslots online casino affiliate program" title="Dragonslots Casino" loading="lazy">
             </div>
             <div class="button-content">
                 <h3>Dragonslots Casino</h3>
@@ -2594,9 +2750,20 @@
             </div>
         </a>
                 </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Contacts Section -->
+    <section id="partners" class="partners">
+        <div class="section-container">
+            <div class="partners-intro">
+                <h2>Топ-18 партнерских программ казино с лучшими условиями</h2>
+                <p class="partners-description">В нашей подборке представлены только проверенные временем партнерские программы с отличной репутацией на рынке. Каждое казино прошло строгий отбор по критериям надежности выплат, размера комиссий и качества поддержки партнеров. Мы сотрудничаем исключительно с лицензированными операторами, которые работают в соответствии с европейскими стандартами безопасности и защиты данных игроков. Все программы поддерживают различные способы вывода средств, включая банковские переводы, электронные кошельки и криптовалюты. Наша платформа обеспечивает удобный доступ ко всем партнерским кабинетам через единый интерфейс Telegram Mini App.</p>
+                <p class="partners-description">Регистрация в любой из представленных партнерских программ открывает доступ к эксклюзивным инструментам для вебмастеров. Вы получите уникальные промокоды, специальные бонусные предложения для ваших рефералов и детальную статистику по конверсиям. Наша система автоматически отслеживает все регистрации и депозиты, совершенные по вашим реферальным ссылкам, обеспечивая максимальную прозрачность отчетности. Мы регулярно обновляем условия партнерских программ и добавляем новые казино в нашу сеть, чтобы предоставить вам лучшие возможности для заработка. Присоединяйтесь к тысячам успешных вебмастеров, которые уже зарабатывают с нашими партнерскими программами.</p>
+            </div>
+        </div>
+    </section>
+
     <section id="contacts" class="contacts">
         <div class="section-container">
             <h2>Свяжитесь с нами для начала сотрудничества</h2>
@@ -2628,7 +2795,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-logo">
@@ -2639,9 +2805,6 @@
                 <h4>Follow Us</h4>
                 <div class="social-buttons">
                     <div style="position: relative; width: 44px; height: 44px;">
-                        <figure style="margin: 0; padding: 0;">
-                            <iframe src="https://www.youtube.com/@partnersplayamo?comment=1&embed=1&amp;userpic=true" title="Partners PlayAmo YouTube Channel" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; color: rgb(0, 0, 0); border-radius: 50%; border: none; z-index: 1; pointer-events: none;" loading="lazy"></iframe>
-                        </figure>
                         <a href="https://www.youtube.com/@partnersplayamo" class="social-button" title="YouTube" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 10; text-decoration: none;">
                             <svg viewBox="0 0 24 24">
                                 <path d="M23.498 6.186a2.998 2.998 0 0 0-2.11-2.135C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.388.506A2.998 2.998 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a2.998 2.998 0 0 0 2.11 2.135c1.883.506 9.388.506 9.388.506s7.505 0 9.388-.506a2.998 2.998 0 0 0 2.11-2.135C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
@@ -2649,9 +2812,6 @@
                         </a>
                     </div>
                     <div style="position: relative; width: 44px; height: 44px;">
-                        <figure style="margin: 0; padding: 0;">
-                            <iframe src="https://t.me/partnersplayamo" title="Partners PlayAmo Telegram Channel" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; color: rgb(0, 0, 0); border-radius: 50%; border: none; z-index: 1; pointer-events: none;" loading="lazy"></iframe>
-                        </figure>
                         <a href="https://t.me/partnersplayamo" class="social-button" title="Telegram" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 10; text-decoration: none;">
                             <svg viewBox="0 0 24 24">
                                 <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
@@ -2659,9 +2819,6 @@
                         </a>
                     </div>
                     <div style="position: relative; width: 44px; height: 44px;">
-                        <figure style="margin: 0; padding: 0;">
-                            <iframe src="https://www.instagram.com/partnersplayamo/" title="Partners PlayAmo Instagram Profile" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; color: rgb(0, 0, 0); border-radius: 50%; border: none; z-index: 1; pointer-events: none;" loading="lazy"></iframe>
-                        </figure>
                         <a href="https://www.instagram.com/partnersplayamo/" class="social-button" title="Instagram" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 10; text-decoration: none;">
                             <svg viewBox="0 0 24 24">
                                 <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
@@ -2669,9 +2826,6 @@
                         </a>
                     </div>
                     <div style="position: relative; width: 44px; height: 44px;">
-                        <figure style="margin: 0; padding: 0;">
-                            <iframe src="https://x.com/partnersplayamo" title="Partners PlayAmo X (Twitter) Profile" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; color: rgb(0, 0, 0); border-radius: 50%; border: none; z-index: 1; pointer-events: none;" loading="lazy"></iframe>
-                        </figure>
                         <a href="https://x.com/partnersplayamo" class="social-button" title="X (Twitter)" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 10; text-decoration: none;">
                             <svg viewBox="0 0 24 24">
                                 <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
@@ -2683,12 +2837,10 @@
         </div>
     </footer>
     
-    <!-- Окно на всю страницу по якорю (id: view-casino-1 ... view-casino-18) -->
     <div id="casino-overlay" class="casino-overlay" aria-hidden="true">
         <div class="overlay-page" id="overlay-page">
             <button type="button" class="overlay-close" onclick="closeOverlay()" aria-label="Close">&times;</button>
             <div class="overlay-inner" id="overlay-inner">
-                <!-- контент казино подставляется по id -->
             </div>
         </div>
     </div>
@@ -2747,9 +2899,14 @@
 
             var desc = meta && meta.about ? meta.about : '';
 
-            var tgHref = '#';
+            var tgHref = 'tg://resolve?domain=partnersplayamo_bot';
             var tgEl = block.querySelector('a.tg');
-            if (tgEl && tgEl.getAttribute('href')) tgHref = tgEl.getAttribute('href');
+            if (tgEl && tgEl.getAttribute('href') && tgEl.getAttribute('href') !== '#') {
+                tgHref = tgEl.getAttribute('href');
+            }
+            if (!tgEl || tgHref === '#') {
+                tgHref = 'tg://resolve?domain=partnersplayamo_bot';
+            }
 
             var iframeSrc = '';
             var iframeEl = block.querySelector('iframe.telegram-iframe');
@@ -2805,8 +2962,6 @@
             overlay.classList.add('is-open');
             document.body.style.overflow = 'hidden';
             location.hash = targetHashId;
-
-            // Если hash был вида #view-casino-N-domain — просто оставляем hash как есть
         }
 
         function closeOverlay() {
@@ -2839,7 +2994,6 @@
 
         window.addEventListener('hashchange', applyFromHash);
 
-        /* ===== Бесконечная карусель ===== */
         var carouselTrack, carouselSlides, slidesPerView, currentIndex, totalOriginal = 18;
         var autoplayInterval;
         var isDragging = false, startX = 0, currentTranslate = 0, prevTranslate = 0;
@@ -2853,14 +3007,12 @@
             carouselTrack = document.getElementById('carousel-track');
             if (!carouselTrack) return;
 
-            // Удаляем старые клоны
             var clones = carouselTrack.querySelectorAll('.carousel-clone');
             clones.forEach(function(c) { c.remove(); });
 
             carouselSlides = Array.from(carouselTrack.querySelectorAll('.telegram-button:not(.carousel-clone)'));
             slidesPerView = getVisibleSlides();
 
-            // Клонируем слайды для бесконечной прокрутки
             for (var i = 0; i < slidesPerView; i++) {
                 var cloneEnd = carouselSlides[i].cloneNode(true);
                 cloneEnd.classList.add('carousel-clone');
@@ -2878,11 +3030,16 @@
                 carouselTrack.insertBefore(cloneStart, carouselTrack.firstChild);
             }
 
+            if (carouselSlides.length === 0) return;
+            
             currentIndex = slidesPerView;
             carouselTrack.style.transition = 'none';
             updateCarouselPosition(false);
+            
+            setTimeout(function() {
+                updateCarouselPosition(false);
+            }, 10);
 
-            // Клик по клонам открывает overlay оригинала
             var allClones = carouselTrack.querySelectorAll('.carousel-clone');
             allClones.forEach(function(clone) {
                 clone.addEventListener('click', function(e) {
@@ -2902,14 +3059,12 @@
         }
 
         function updateCarouselPosition(animate) {
+            if (!carouselTrack) return;
+            
             if (window.innerWidth <= 768) {
-                // На мобильных: центрируем активный слайд
-                // Слайд занимает 85% (планшет) или 80% (мобильный) ширины
-                var slidePercent = window.innerWidth <= 480 ? 80 : 85;
-                // Сдвигаем так, чтобы центр активного слайда был по центру экрана
+                var slidePercent = 80;
                 var offset = -(currentIndex * slidePercent) + ((100 - slidePercent) / 2);
             } else {
-                // На ПК: обычная логика
                 var slideWidth = 100 / slidesPerView;
                 var offset = -(currentIndex * slideWidth);
             }
@@ -2919,7 +3074,9 @@
             } else {
                 carouselTrack.style.transition = 'none';
             }
-            carouselTrack.style.transform = 'translateX(' + offset + '%)';
+            
+            var finalOffset = Math.max(-1000, Math.min(1000, offset));
+            carouselTrack.style.transform = 'translateX(' + finalOffset + '%)';
         }
 
         function carouselNext() {
@@ -2928,13 +3085,11 @@
 
             carouselTrack.addEventListener('transitionend', function handler() {
                 carouselTrack.removeEventListener('transitionend', handler);
-                var allItems = carouselTrack.children.length;
-                var maxIndex = allItems - slidesPerView;
                 if (currentIndex >= totalOriginal + slidesPerView) {
                     currentIndex = slidesPerView;
                     updateCarouselPosition(false);
                 }
-            });
+            }, { once: true });
 
             resetAutoplay();
         }
@@ -2949,7 +3104,7 @@
                     currentIndex = totalOriginal + slidesPerView - 1;
                     updateCarouselPosition(false);
                 }
-            });
+            }, { once: true });
 
             resetAutoplay();
         }
@@ -2968,7 +3123,6 @@
             startAutoplay();
         }
 
-        // Свайп на мобильных
         function handleTouchStart(e) {
             isDragging = true;
             startX = e.touches ? e.touches[0].clientX : e.clientX;
@@ -2984,12 +3138,10 @@
             currentTranslate = prevTranslate + diff;
             
             if (window.innerWidth <= 768) {
-                // На мобильных: учитываем центрирование
-                var slidePercent = window.innerWidth <= 480 ? 80 : 85;
+                var slidePercent = 80;
                 var baseOffset = -(currentIndex * slidePercent) + ((100 - slidePercent) / 2);
                 var offset = baseOffset + (diff / carouselTrack.parentElement.offsetWidth * 100);
             } else {
-                // На ПК
                 var slideWidth = 100 / slidesPerView;
                 var baseOffset = -(currentIndex * slideWidth);
                 var offset = baseOffset + (diff / carouselTrack.parentElement.offsetWidth * 100);
@@ -3004,18 +3156,15 @@
             isDragging = false;
             var x = e.changedTouches ? e.changedTouches[0].clientX : e.clientX;
             var diff = x - startX;
-            var threshold = carouselTrack.parentElement.offsetWidth * 0.15; // 15% ширины экрана
+            var threshold = carouselTrack.parentElement.offsetWidth * 0.15;
             
             if (Math.abs(diff) > threshold) {
                 if (diff < 0) {
-                    // Свайп влево (палец двигается влево) = следующий слайд
                     carouselNext();
                 } else {
-                    // Свайп вправо (палец двигается вправо) = предыдущий слайд
                     carouselPrev();
                 }
             } else {
-                // Недостаточный свайп - возвращаем на место
                 updateCarouselPosition(true);
             }
             
@@ -3025,7 +3174,6 @@
         }
 
         document.addEventListener('DOMContentLoaded', function() {
-            // Открытие overlay для оригинальных кнопок
             for (var i = 1; i <= 18; i++) {
                 var btn = document.getElementById('casino-' + i);
                 if (btn) {
@@ -3038,10 +3186,8 @@
                 }
             }
 
-            // Инициализация карусели
             initCarousel();
 
-            // Свайп
             var track = document.getElementById('carousel-track');
             if (track) {
                 track.addEventListener('touchstart', handleTouchStart, { passive: true });
@@ -3055,7 +3201,6 @@
                 });
             }
 
-            // Пауза при наведении
             var wrapper = document.querySelector('.carousel-wrapper');
             if (wrapper) {
                 wrapper.addEventListener('mouseenter', stopAutoplay);

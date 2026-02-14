@@ -3,15 +3,4 @@
 User-agent: *
 Allow: /
 
-# Disallow admin and private areas (if any)
-Disallow: /admin/
-Disallow: /private/
-Disallow: /*.zip$
-Disallow: /*.py$
-
-# Sitemap location
 Sitemap: https://partnersplayamo.net/sitemap.xml
-
-# Crawl-delay (optional, adjust if needed)
-# Crawl-delay: 1
-
